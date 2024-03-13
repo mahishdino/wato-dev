@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
     fontSize: rs(18),
     fontFamily: typography.Main,
     marginTop: rs(30),
+    lineHeight: rs(30),
     color: "#fff",
   },
 });
