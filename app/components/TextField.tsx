@@ -10,6 +10,7 @@ interface MainTextFieldProps {
   isPassword: boolean;
   title: string;
   style?: object;
+  value?: string;
 }
 
 export const MainTextField = ({
@@ -17,6 +18,7 @@ export const MainTextField = ({
   isPassword,
   title,
   style = {},
+  value,
 }: MainTextFieldProps) => {
   return (
     <View style={[styles.container, style]}>
@@ -32,6 +34,7 @@ export const MainTextField = ({
         style={styles.input}
         placeholder={title}
         onChangeText={onChangeText}
+        value={value}
       />
     </View>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import { HeaderText } from "../components/HeaderText.tsx";
 import { rs } from "../theme/responsiveScreen.ts";
 import { typography } from "../theme/typography.ts";
@@ -11,59 +11,41 @@ import { GoogleButton } from "../components/GoogleButton.tsx";
 import { GetStartedProps } from "../types/types.ts";
 import CheckBox from "react-native-check-box";
 import { Colors } from "../theme/color.ts";
+import { fields } from "../constantData/fieldsData.ts";
+import { FormData, handleTextChange } from "../functions/signUpUtils.ts";
 
 export const SignUp = ({ navigation }: GetStartedProps) => {
   const [check, setCheck] = React.useState(false);
+
+  const [formData, setFormData] = React.useState<FormData>({
+    Name: "",
+    Email: "",
+    Password: "",
+  });
+
   return (
-    <View
-      style={{
-        backgroundColor: "#000",
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <View
-        style={{
-          marginVertical: rs(30),
-          alignItems: "flex-start",
-          width: "90%",
-        }}
-      >
+    <View style={styles.mainContainer}>
+      <View style={styles.headerTitleContainer}>
         <HeaderText
-          style={{
-            fontFamily: typography.Main,
-            textAlign: "left",
-          }}
-          title={"Please sign-in to your account"}
+          style={styles.headerText}
+          title={"Please sign-up for your account"}
         />
       </View>
       <Card>
         <View style={{ marginVertical: rs(20) }}>
-          <MainTextField
-            style={{ marginVertical: 0 }}
-            title={"Name"}
-            isPassword={false}
-            onChangeText={(txt) => {
-              console.log(txt);
-            }}
-          />
-          <MainTextField
-            style={{ marginVertical: 20 }}
-            title={"Email"}
-            isPassword={false}
-            onChangeText={(txt) => {
-              console.log(txt);
-            }}
-          />
-          <MainTextField
-            style={{ marginVertical: 0 }}
-            title={"Password"}
-            isPassword={true}
-            onChangeText={(txt) => {
-              console.log(txt);
-            }}
-          />
+          {fields.map((field, index) => (
+            <MainTextField
+              key={index}
+              style={{
+                marginVertical: index === 1 ? 20 : 0,
+              }}
+              title={field.title}
+              isPassword={field.isPassword}
+              onChangeText={(text) =>
+                handleTextChange(text, field.title, setFormData)
+              }
+            />
+          ))}
         </View>
         <View
           style={{
@@ -89,7 +71,13 @@ export const SignUp = ({ navigation }: GetStartedProps) => {
           />
         </View>
 
-        <AuthButton spaceVertical={rs(20)} title={"Login"} />
+        <AuthButton
+          onPress={() => {
+            console.log(formData);
+          }}
+          spaceVertical={rs(20)}
+          title={"Sign Up"}
+        />
         <View style={{ alignItems: "center" }}>
           <MainOneLiner
             firstLine={"Have An Account ?"}
@@ -99,7 +87,7 @@ export const SignUp = ({ navigation }: GetStartedProps) => {
             }}
           />
           <Text style={{ marginVertical: rs(20), textAlign: "center" }}>
-            {"Or"}
+            {"or"}
           </Text>
           <GoogleButton title={"Continue with Google"} spaceVertical={0} />
         </View>
@@ -107,3 +95,21 @@ export const SignUp = ({ navigation }: GetStartedProps) => {
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  mainContainer: {
+    backgroundColor: "#000",
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  headerTitleContainer: {
+    marginVertical: rs(30),
+    alignItems: "flex-start",
+    width: "90%",
+  },
+  headerText: {
+    fontFamily: typography.MainGtx,
+    textAlign: "left",
+  },
+});

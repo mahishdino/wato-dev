@@ -24,6 +24,11 @@ export const typography = {
     ios: "Inter-Regular",
     android: "Inter-Regular",
   }),
+  MainSan: Platform.select({
+    ios: "SequelSansBoldDisp",
+    android: "SequelSansBoldDisp",
+  }),
+
   MainBold: Platform.select({
     ios: "Inter-Bold",
     android: "Inter-Bold",
@@ -33,7 +38,7 @@ export const typography = {
     android: "Inter-ExtraLight",
   }),
   MainGtx: Platform.select({
-    ios: "GT-Super-Text-Regular",
-    android: "GT-Super-Text-Regular",
+    ios: "GTSuperRegular",
+    android: "GTSuperRegular",
   }),
 };

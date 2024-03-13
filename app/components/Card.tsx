@@ -14,9 +14,9 @@ export const Card = ({ children }: CardProps) => {
     <View>
       <LinearGradient
         style={styles.linearGradient}
-        colors={["#333131", "#555555"]}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 0 }}
+        colors={["#222222", "#555555"]}
+        start={{ x: 1, y: 1 }}
+        end={{ x: 0, y: 0 }}
       >
         {children}
       </LinearGradient>

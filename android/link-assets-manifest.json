@@ -82,6 +82,14 @@
       "sha1": "9ce7780cf1282c332fa5b124324977e5107d5843"
     },
     {
+      "path": "app/assets/fonts/GTSuperBold.otf",
+      "sha1": "d04c10cbc9d4d83f44962c4f9546b69b821fdbc1"
+    },
+    {
+      "path": "app/assets/fonts/GTSuperRegular.otf",
+      "sha1": "0b848708b99d69c2ec8edf89b37447d963885f41"
+    },
+    {
       "path": "app/assets/fonts/Inter-Black.ttf",
       "sha1": "f79fa58ace5f55e338c99bf71e7e0702841df6f2"
     },
@@ -260,6 +268,26 @@
     {
       "path": "app/assets/fonts/OpenSans_SemiCondensed-SemiBoldItalic.ttf",
       "sha1": "44c7798ee52de7a6249a30d6675862785814298e"
+    },
+    {
+      "path": "app/assets/fonts/SansBook.otf",
+      "sha1": "fae5dd2cc0bdf1cf21f9aba86d5cd9931c9e6466"
+    },
+    {
+      "path": "app/assets/fonts/SansLight.otf",
+      "sha1": "d96f03b3e7e83f0a5539da3c5961ac00768bee1b"
+    },
+    {
+      "path": "app/assets/fonts/SequelSansBoldDisp.otf",
+      "sha1": "1f1ee4d984a320b340941c9e2bb7bbc69a5a6473"
+    },
+    {
+      "path": "app/assets/fonts/SequelSansBoldDisp.ttf",
+      "sha1": "c958c870f68714aadde6f5b5c96324ebf1fd0208"
+    },
+    {
+      "path": "app/assets/fonts/SequelSansMediumDisp.otf",
+      "sha1": "5f31e9607e4ac854a0d1187be646af68d3c8c3ad"
     }
   ]
 }

@@ -30,8 +30,11 @@ export const MainButton = ({ title }: MainButtonProps) => {
 const styles = StyleSheet.create({
   buttonContainer: {
     borderRadius: rs(10),
+    elevation: 5,
   },
   linearGradient: {
+    elevation: rs(10),
+    zIndex: rs(10),
     width: wp(90),
     height: rs(48),
     borderRadius: rs(10),

@@ -114,6 +114,13 @@
 		<string>OpenSans_SemiCondensed-Regular.ttf</string>
 		<string>OpenSans_SemiCondensed-SemiBold.ttf</string>
 		<string>OpenSans_SemiCondensed-SemiBoldItalic.ttf</string>
+		<string>GTSuperBold.otf</string>
+		<string>GTSuperRegular.otf</string>
+		<string>SansBook.otf</string>
+		<string>SansLight.otf</string>
+		<string>SequelSansBoldDisp.otf</string>
+		<string>SequelSansMediumDisp.otf</string>
+		<string>SequelSansBoldDisp.ttf</string>
 	</array>
 </dict>
 </plist>

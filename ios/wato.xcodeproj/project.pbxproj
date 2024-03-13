@@ -79,6 +79,13 @@
 		125E3759D4E942E28988A3DC /* OpenSans_SemiCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCE547835D2142CA94A1F2A0 /* OpenSans_SemiCondensed-Regular.ttf */; };
 		D61074736E604B99B772EA57 /* OpenSans_SemiCondensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 593A152DC8EF410DBB932BC8 /* OpenSans_SemiCondensed-SemiBold.ttf */; };
 		CB2157AB9ABE407885DC0470 /* OpenSans_SemiCondensed-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 272CF813EFB0409591214AD4 /* OpenSans_SemiCondensed-SemiBoldItalic.ttf */; };
+		2E38D6DDABF649D9B5103EFC /* GTSuperBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 272DDF9EFF4944409849FA56 /* GTSuperBold.otf */; };
+		0C58C4542EAB4E6E992A30A0 /* GTSuperRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E37A6EF3F21749C38886671C /* GTSuperRegular.otf */; };
+		7B871AF394C74516AC585FF3 /* SansBook.otf in Resources */ = {isa = PBXBuildFile; fileRef = A8293B798E614EEE8E6E428B /* SansBook.otf */; };
+		4A8EEF8052EB4872AA8767D9 /* SansLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04C534C8240A4E8B826EDDB7 /* SansLight.otf */; };
+		D3C2CF170FD6401D9C64428E /* SequelSansBoldDisp.otf in Resources */ = {isa = PBXBuildFile; fileRef = B914231E3BC8405289454005 /* SequelSansBoldDisp.otf */; };
+		7CD4EEEB9BD6415DAE8D0949 /* SequelSansMediumDisp.otf in Resources */ = {isa = PBXBuildFile; fileRef = DD3B9350F13F4362ADD6BD9E /* SequelSansMediumDisp.otf */; };
+		AAAA6C9494E04E6F965D4551 /* SequelSansBoldDisp.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A12BE9045D3A4291954969DB /* SequelSansBoldDisp.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -174,6 +181,13 @@
 		DCE547835D2142CA94A1F2A0 /* OpenSans_SemiCondensed-Regular.ttf */ = {isa = PBXFileReference; name = "OpenSans_SemiCondensed-Regular.ttf"; path = "../app/assets/fonts/OpenSans_SemiCondensed-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		593A152DC8EF410DBB932BC8 /* OpenSans_SemiCondensed-SemiBold.ttf */ = {isa = PBXFileReference; name = "OpenSans_SemiCondensed-SemiBold.ttf"; path = "../app/assets/fonts/OpenSans_SemiCondensed-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		272CF813EFB0409591214AD4 /* OpenSans_SemiCondensed-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "OpenSans_SemiCondensed-SemiBoldItalic.ttf"; path = "../app/assets/fonts/OpenSans_SemiCondensed-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		272DDF9EFF4944409849FA56 /* GTSuperBold.otf */ = {isa = PBXFileReference; name = "GTSuperBold.otf"; path = "../app/assets/fonts/GTSuperBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E37A6EF3F21749C38886671C /* GTSuperRegular.otf */ = {isa = PBXFileReference; name = "GTSuperRegular.otf"; path = "../app/assets/fonts/GTSuperRegular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A8293B798E614EEE8E6E428B /* SansBook.otf */ = {isa = PBXFileReference; name = "SansBook.otf"; path = "../app/assets/fonts/SansBook.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		04C534C8240A4E8B826EDDB7 /* SansLight.otf */ = {isa = PBXFileReference; name = "SansLight.otf"; path = "../app/assets/fonts/SansLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B914231E3BC8405289454005 /* SequelSansBoldDisp.otf */ = {isa = PBXFileReference; name = "SequelSansBoldDisp.otf"; path = "../app/assets/fonts/SequelSansBoldDisp.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DD3B9350F13F4362ADD6BD9E /* SequelSansMediumDisp.otf */ = {isa = PBXFileReference; name = "SequelSansMediumDisp.otf"; path = "../app/assets/fonts/SequelSansMediumDisp.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A12BE9045D3A4291954969DB /* SequelSansBoldDisp.ttf */ = {isa = PBXFileReference; name = "SequelSansBoldDisp.ttf"; path = "../app/assets/fonts/SequelSansBoldDisp.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -347,6 +361,13 @@
 				DCE547835D2142CA94A1F2A0 /* OpenSans_SemiCondensed-Regular.ttf */,
 				593A152DC8EF410DBB932BC8 /* OpenSans_SemiCondensed-SemiBold.ttf */,
 				272CF813EFB0409591214AD4 /* OpenSans_SemiCondensed-SemiBoldItalic.ttf */,
+				272DDF9EFF4944409849FA56 /* GTSuperBold.otf */,
+				E37A6EF3F21749C38886671C /* GTSuperRegular.otf */,
+				A8293B798E614EEE8E6E428B /* SansBook.otf */,
+				04C534C8240A4E8B826EDDB7 /* SansLight.otf */,
+				B914231E3BC8405289454005 /* SequelSansBoldDisp.otf */,
+				DD3B9350F13F4362ADD6BD9E /* SequelSansMediumDisp.otf */,
+				A12BE9045D3A4291954969DB /* SequelSansBoldDisp.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -512,6 +533,13 @@
 				125E3759D4E942E28988A3DC /* OpenSans_SemiCondensed-Regular.ttf in Resources */,
 				D61074736E604B99B772EA57 /* OpenSans_SemiCondensed-SemiBold.ttf in Resources */,
 				CB2157AB9ABE407885DC0470 /* OpenSans_SemiCondensed-SemiBoldItalic.ttf in Resources */,
+				2E38D6DDABF649D9B5103EFC /* GTSuperBold.otf in Resources */,
+				0C58C4542EAB4E6E992A30A0 /* GTSuperRegular.otf in Resources */,
+				7B871AF394C74516AC585FF3 /* SansBook.otf in Resources */,
+				4A8EEF8052EB4872AA8767D9 /* SansLight.otf in Resources */,
+				D3C2CF170FD6401D9C64428E /* SequelSansBoldDisp.otf in Resources */,
+				7CD4EEEB9BD6415DAE8D0949 /* SequelSansMediumDisp.otf in Resources */,
+				AAAA6C9494E04E6F965D4551 /* SequelSansBoldDisp.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

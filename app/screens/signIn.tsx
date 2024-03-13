@@ -1,4 +1,4 @@
-import { Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import { MainTextField } from "../components/TextField.tsx";
 import { AuthButton } from "../components/AuthButton.tsx";
 import { Card } from "../components/Card.tsx";
@@ -12,24 +12,11 @@ import { GetStartedProps } from "../types/types.ts";
 
 export const SignIn = ({ navigation }: GetStartedProps) => {
   return (
-    <View
-      style={{
-        backgroundColor: "#000",
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <View
-        style={{
-          marginVertical: rs(30),
-          alignItems: "flex-start",
-          width: "90%",
-        }}
-      >
+    <View style={styles.mainContainer}>
+      <View style={styles.headerTitleContainer}>
         <HeaderText
           style={{
-            fontFamily: typography.Main,
+            fontFamily: typography.MainGtx,
             textAlign: "left",
           }}
           title={"Please sign-in to your account"}
@@ -40,7 +27,7 @@ export const SignIn = ({ navigation }: GetStartedProps) => {
         <View style={{ marginVertical: rs(20) }}>
           <MainTextField
             style={{ marginVertical: 20 }}
-            title={"Enter An Email"}
+            title={"Email"}
             isPassword={false}
             onChangeText={(txt) => {
               console.log(txt);
@@ -48,21 +35,21 @@ export const SignIn = ({ navigation }: GetStartedProps) => {
           />
           <MainTextField
             style={{ marginVertical: 0 }}
-            title={"Enter A Password"}
+            title={"Password"}
             isPassword={true}
             onChangeText={(txt) => {
               console.log(txt);
             }}
           />
         </View>
-        <View style={{ width: "95%", marginVertical: rs(10) }}>
+        <View style={styles.forgetPasswordContainer}>
           <MainSubLiner
             style={{ textAlign: "right" }}
             mainLine={"Forget Password?"}
             onPress={() => {}}
           />
         </View>
-        <AuthButton spaceVertical={rs(20)} title={"Login"} />
+        <AuthButton onPress={() => {}} spaceVertical={rs(20)} title={"Login"} />
         <View style={{ alignItems: "center" }}>
           <MainOneLiner
             firstLine={"New To Our Platform?"}
@@ -71,12 +58,26 @@ export const SignIn = ({ navigation }: GetStartedProps) => {
               navigation.navigate("signUp");
             }}
           />
-          <Text style={{ marginVertical: rs(20), textAlign: "center" }}>
-            {"Or"}
-          </Text>
+          <Text style={styles.orTextContainer}>{"or"}</Text>
           <GoogleButton title={"Continue with Google"} spaceVertical={0} />
         </View>
       </Card>
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  mainContainer: {
+    flex: 1,
+    backgroundColor: "#000",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  headerTitleContainer: {
+    marginVertical: rs(30),
+    alignItems: "flex-start",
+    width: "90%",
+  },
+  orTextContainer: { marginVertical: rs(20), textAlign: "center" },
+  forgetPasswordContainer: { width: "95%", marginVertical: rs(10) },
+});

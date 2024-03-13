@@ -8,11 +8,17 @@ import { Colors } from "../theme/color.ts";
 interface AuthButtonProps {
   title: string;
   spaceVertical: number;
+  onPress: () => void;
 }
 
-export const AuthButton = ({ title, spaceVertical }: AuthButtonProps) => {
+export const AuthButton = ({
+  title,
+  spaceVertical,
+  onPress,
+}: AuthButtonProps) => {
   return (
     <TouchableOpacity
+      onPress={onPress}
       style={{
         marginVertical: spaceVertical,
         width: wp(80),

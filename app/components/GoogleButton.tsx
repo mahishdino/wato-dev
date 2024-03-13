@@ -29,7 +29,9 @@ export const GoogleButton = ({ title, spaceVertical }: GoogleButtonProps) => {
         style={{ width: rs(20), height: rs(20) }}
         source={require("../assets/images/google.png")}
       />
-      <Text style={{ fontSize: rs(14), color: "#fff" }}>{title}</Text>
+      <Text style={{ fontSize: rs(14), color: "#fff", marginLeft: rs(10) }}>
+        {title}
+      </Text>
     </TouchableOpacity>
   );
 };
