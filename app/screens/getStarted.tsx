@@ -24,7 +24,10 @@ export const GetStarted = ({ navigation }: GetStartedProps) => {
         <Text style={styles.headerText}>{AppText.wato}</Text>
         <Text style={styles.subHeaderText}>{AppText.zeroWhatsapp}</Text>
       </View>
-      <MainButton title={"Get Started"} />
+      <MainButton
+        onPress={() => navigation.navigate("signUp")}
+        title={"Get Started"}
+      />
 
       <MainOneLiner
         style={styles.mainOnelinerContainer}

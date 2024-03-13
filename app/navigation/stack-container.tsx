@@ -1,4 +1,7 @@
-import { createStackNavigator } from "@react-navigation/stack";
+import {
+  CardStyleInterpolators,
+  createStackNavigator,
+} from "@react-navigation/stack";
 import { GetStarted } from "../screens/getStarted.tsx";
 import { SignIn } from "../screens/signIn.tsx";
 import { SignUp } from "../screens/signUp.tsx";
@@ -11,6 +14,7 @@ const StackContainer = () => {
       initialRouteName={"getStarted"}
       screenOptions={{
         headerShown: false,
+        cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
       }}
     >
       <Stack.Screen name="getStarted" component={GetStarted} />
